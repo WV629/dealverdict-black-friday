@@ -42,7 +42,7 @@ export function renderGrid(deals, total) {
   if (!deals.length) {
     return `<div class="empty">
       <p class="empty-big">No deals match those filters.</p>
-      <p>Try clearing the search or lowering the minimum discount — all ${total} deals are still listed below the filters.</p>
+      <p>Try clearing the search, picking another category or store, or lowering the minimum discount.</p>
     </div>`;
   }
   return `<div class="grid">${deals.map(dealCard).join('')}</div>`;

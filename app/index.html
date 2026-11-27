@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>DealVerdict — Real Black Friday Deals, Checked Nov 27, 2026</title>
+<meta name="description" content="31 real Black Friday and Cyber Monday deals, each checked at its store on Nov 27, 2026, with an honest verdict on whether it is really a deal.">
+<link rel="stylesheet" href="./style.css">
+</head>
+<body>
+<header class="masthead">
+  <div class="wrap">
+    <p class="kicker">BLACK FRIDAY · NOV 27, 2026 · PRICES CHECKED <span id="checked-day">Nov 27, 2026</span></p>
+    <h1>Deal<span class="accent">Verdict</span></h1>
+    <p class="tagline">Real Black Friday deals, checked at the store — with an honest verdict on each one.</p>
+    <dl class="stats">
+      <div><dt>Deals checked</dt><dd id="stat-deals">–</dd></div>
+      <div><dt>True deals</dt><dd id="stat-true">–</dd></div>
+      <div><dt>Average discount</dt><dd id="stat-avg">–</dd></div>
+      <div><dt>Total savings</dt><dd id="stat-save">–</dd></div>
+    </dl>
+  </div>
+</header>
+
+<main class="wrap">
+  <section class="toolbar" aria-label="Find a deal">
+    <div class="toolbar-row">
+      <label class="search-box">Search
+        <input id="search" type="search" placeholder="Try “AirPods”, “TV”, “vacuum”…" autocomplete="off">
+      </label>
+      <label>Category <select id="category"></select></label>
+      <label>Store <select id="store"></select></label>
+      <label>Discount <select id="min-discount"></select></label>
+      <label>Sort <select id="sort"></select></label>
+    </div>
+    <div class="toolbar-row verdict-row" role="group" aria-label="Verdict filter">
+      <span class="verdict-label">Show:</span>
+      <label class="radio"><input type="radio" name="verdict" id="verdict-all" value="all"> All deals</label>
+      <label class="radio"><input type="radio" name="verdict" id="verdict-true" value="true"> True deals only</label>
+      <label class="radio"><input type="radio" name="verdict" id="verdict-good" value="good"> Good prices</label>
+      <label class="radio"><input type="radio" name="verdict" id="verdict-routine" value="routine"> Routine sales</label>
+      <button id="clear-filters" type="button">Clear filters</button>
+    </div>
+  </section>
+
+  <p id="results-meta" class="results-meta" aria-live="polite"></p>
+  <div id="featured-wrap"></div>
+  <div id="grid-wrap"></div>
+  <div id="detail-wrap"></div>
+
+  <section class="method" aria-label="How we check a deal">
+    <h2>How we check a deal</h2>
+    <ol>
+      <li><strong>Find it at the store.</strong> Every price here was read in the store’s own Black Friday announcement or in a deals source that names the store — never guessed, never from a price we invented.</li>
+      <li><strong>Check the “was” price.</strong> A discount only counts if the usual price is real. If a store raised its list price first, the verdict says so.</li>
+      <li><strong>Give a verdict.</strong> <span class="verdict verdict-true">TRUE DEAL</span> means an all-time low or a deep cut on a real list price. <span class="verdict verdict-good">GOOD PRICE</span> means a solid cut, near the lowest tracked. <span class="verdict verdict-routine">ROUTINE SALE</span> means a small cut — buy it for the product, not the discount.</li>
+      <li><strong>Link the live listing.</strong> Every “View at” button opens the store’s search for that exact product, so you see the live price before you buy. Prices move hourly on Black Friday.</li>
+    </ol>
+  </section>
+
+  <section class="not-deal" aria-label="Not a deal">
+    <h2>Not a deal — read this first</h2>
+    <p><strong>Apple’s own Black Friday event (Nov 27–30) is not a price cut.</strong> Apple charges full price and gives you a gift card of up to $300 instead. On a MacBook Air M5, Amazon’s $310 off beats Apple’s $200 gift card — buy it at Amazon. And the new Apple TV 4K at $289 is only $10 off $299: a fine product, a routine sale.</p>
+  </section>
+
+  <section class="sources" aria-label="Sources">
+    <h2>Where each price was read</h2>
+    <p>Best Buy’s Black Friday release (Nov 17) · Amazon Black Friday Week announcements (Nov 9–19) · 9to5Mac, 9to5Toys and 9to5Google deal tracking (Nov 23–26) · MacRumors · AppleInsider (Nov 27) · Benzinga via TradingView (Nov 27) · DealNews (Nov 23) · Product Bible (Nov 19) · CNN Underscored · Costco.com. Every deal page names its own source and check time.</p>
+  </section>
+</main>
+
+<footer class="wrap footer">
+  <p>DealVerdict is an independent deal finder. Prices were checked on Nov 27, 2026 and can change or sell out — always confirm the live price at the store before buying. Product names and store names belong to their owners; this site is not affiliated with any store listed here.</p>
+</footer>
+
+<script type="module" src="./main.js"></script>
+</body>
+</html>
